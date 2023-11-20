@@ -11,7 +11,6 @@ export class CreateOrderController {
 
         console.log(order);
         
-
         return res.json(order)
     }
 }
