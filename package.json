@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/server.ts",
-    "build": "tsc --build",
-    "start": "node dist/server.js",
-    "vercel-buid": "npx prisma migrate deploy"
+    "build": "rm -rf ./dist && tsc",
+    "start": "node ./dist/server.js"
   },
   "engines": {
     "node": "18.x"
